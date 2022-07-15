@@ -55,7 +55,10 @@ def parse_factors(note_raw: str) -> dict[int, int]:
         '7': (7, 1, -6, 2),
         'L': (7, -1, 6, -2),
         'u': (11, 1, -5, 1),
-        'd': (11, -1, 5, -1)
+        'd': (11, -1, 5, -1),
+        '3': (13, 1, -10, 4),
+        'e': (13, -1, 10, -4),
+
     }
 
     factors[2], factors[3] = note_name_to_factor(note_raw[0])
