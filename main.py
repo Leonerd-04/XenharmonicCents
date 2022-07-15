@@ -42,7 +42,9 @@ def parse_factors(note_raw: str) -> dict[int, int]:
         2: 0,
         3: 0,
         5: 0,
-        7: 0
+        7: 0,
+        11: 0,
+        13: 0
     }
 
     accidentals = {
@@ -51,7 +53,9 @@ def parse_factors(note_raw: str) -> dict[int, int]:
         '-': (5, 1, 4, -4),
         '+': (5, -1, -4, 4),
         '7': (7, 1, -6, 2),
-        'L': (7, -1, 6, -2)
+        'L': (7, -1, 6, -2),
+        'u': (11, 1, -5, 1),
+        'd': (11, -1, 5, -1)
     }
 
     factors[2], factors[3] = note_name_to_factor(note_raw[0])
