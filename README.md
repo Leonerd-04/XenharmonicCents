@@ -11,3 +11,8 @@ The rest of the accidentals take inspiration from Ben Johnston's notation, and a
 
 Type the note's letter name first (must be capital), then the accidentals in any order. The program will return the difference between the note's 12TET version and the just intonated version.
 This is centered on C, meaning C in this just intonated tuning will be the same as C in 12 TET, or ~523.251 Hz for C5.
+
+Note: Though the accidentals are based on Ben Johnston's for ease of typing,
+the tuning system itself is based instead on the Helmholtz-Ellis system, which
+uses a Pythagorean base. Keep in mind that typing Johnston accidentals 
+directly into this tool will yield the incorrect tunings.
